@@ -26,3 +26,11 @@ function incrementer(num) {
 }
 
 // or
+
+function incrementer(num) {
+  let arr = [];
+  for (let i = 0; i < num.length; ++i) {
+    arr.push((num[i]+i+1)%10)
+  }
+  return arr;
+}
